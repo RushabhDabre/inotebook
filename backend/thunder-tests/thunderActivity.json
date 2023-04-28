@@ -1,0 +1,117 @@
+[
+  {
+    "_id": "8b97aab4-ab7a-4861-806f-b23f2e8429ec",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/api/auth",
+    "url": "localhost:3000/api/auth",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-27T18:56:18.372Z",
+    "modified": "2023-04-27T19:02:17.956Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e991a098-9390-4363-9864-4170e34eff5b",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/api/auth",
+    "url": "localhost:5000/api/auth",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-27T19:04:41.455Z",
+    "modified": "2023-04-28T08:42:22.815Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"mehul\",\n  \"email\":\"mehhull@gmail.com\",\n  \"password\": \"7879898\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7dc8174c-5e4b-4dd7-9eee-f79885531284",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:5000/api/auth/createuser",
+    "url": "localhost:5000/api/auth/createuser",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-28T08:45:12.123Z",
+    "modified": "2023-04-28T08:45:12.123Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Rushabh Dabare\",\n  \"email\": \"rushabhdabare14@gmail.com\",\n  \"password\": \"Rusha123\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c1f161c3-ecc3-4cdc-9a11-bcabcbcf1428",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:5000/api/auth/createuser",
+    "url": "localhost:5000/api/auth/createuser",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-28T08:46:38.150Z",
+    "modified": "2023-04-28T08:46:38.150Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Rushabh Dabare\",\n  \"email\": \"rushabhdabare14@gmail.com\",\n  \"password\": \"Rusha123\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4e5bae5c-9c5e-44d1-89fa-8ff968b93549",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:5000/api/auth",
+    "url": "localhost:5000/api/auth",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-28T08:47:00.706Z",
+    "modified": "2023-04-28T08:47:15.873Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Rushabh Dabare\",\n  \"email\": \"rushabhdabare14@gmail.com\",\n  \"password\": \"Rusha123\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

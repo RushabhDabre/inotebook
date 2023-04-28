@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "7e7ce081-1d2b-4f9b-8474-fc5d6e784807",
+    "colId": "0931da4d-9d56-4367-817d-5412f0a586b3",
+    "containerId": "0933b7d4-687d-41b2-8fc2-1c30e63e1224",
+    "name": "Create a new user Copy",
+    "url": "localhost:5000/api/auth/createuser",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-28T08:42:45.558Z",
+    "modified": "2023-04-28T08:59:53.336Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Tany juniour\",\n  \"email\": \"tanyz@gmail.com\",\n  \"password\": \"Tany@123\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

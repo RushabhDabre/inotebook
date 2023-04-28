@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 
-const mongoURI = "mongodb://localhost:27017" // mondocompass URI String
+const mongoURI = "mongodb://localhost:27017/inotebook" // mondocompass URI String
 
 const connectToMongo = () => {
     mongoose.connect(mongoURI, () => {
