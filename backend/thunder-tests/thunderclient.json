@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-04-28T08:42:45.558Z",
-    "modified": "2023-04-28T08:59:53.336Z",
+    "modified": "2023-04-29T15:32:53.097Z",
     "headers": [
       {
         "name": "Content-Type",
@@ -18,7 +18,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"Tany juniour\",\n  \"email\": \"tanyz@gmail.com\",\n  \"password\": \"Tany@123\"\n}",
+      "raw": "{\n  \"name\": \"M Ghyar\",\n  \"email\": \"MG@gmail.com\",\n  \"password\": \"Thalapathy@123\"\n}",
       "form": []
     },
     "tests": []
