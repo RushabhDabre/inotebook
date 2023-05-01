@@ -116,5 +116,33 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "33913f78-5b60-4e2b-a9f3-3f49ae26b239",
+    "colId": "0931da4d-9d56-4367-817d-5412f0a586b3",
+    "containerId": "b17529f2-575e-4c05-b488-ddf4ddec5258",
+    "name": "Update Note",
+    "url": "localhost:5000/api/notes/updatenote/644e179cc9958718998fc0fc",
+    "method": "PUT",
+    "sortNum": 80000,
+    "created": "2023-05-01T06:58:27.274Z",
+    "modified": "2023-05-01T07:11:50.608Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ0ZDM4YTU2OWNiMjIwNGZmY2I1ZjU2In0sImlhdCI6MTY4MjgzNTIxMn0.eSWfoEtA7YhyVWOZGh6IRJ9hOA502XkMtY5qQa576H8"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"New note updated\",\n  \"description\": \"Please Wake up Early in the Morning (updated)\",\n  \"tag\": \"personal\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
