@@ -50,13 +50,13 @@
   {
     "_id": "b5e9afe7-6791-4809-ab2a-4cc2cfbc7c4e",
     "colId": "0931da4d-9d56-4367-817d-5412f0a586b3",
-    "containerId": "",
+    "containerId": "0933b7d4-687d-41b2-8fc2-1c30e63e1224",
     "name": "Get User Data",
     "url": "localhost:5000/api/auth/getuser",
     "method": "POST",
-    "sortNum": 50000,
+    "sortNum": 40000,
     "created": "2023-04-30T06:42:36.407Z",
-    "modified": "2023-04-30T06:45:33.886Z",
+    "modified": "2023-04-30T06:48:49.540Z",
     "headers": [
       {
         "name": "auth-token",
@@ -64,6 +64,57 @@
       }
     ],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "26f42dbe-8874-44c3-afb4-f5468aafe440",
+    "colId": "0931da4d-9d56-4367-817d-5412f0a586b3",
+    "containerId": "b17529f2-575e-4c05-b488-ddf4ddec5258",
+    "name": "Fetch All Notes",
+    "url": "localhost:5000/api/notes/fetchallnotes",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2023-04-30T06:49:23.226Z",
+    "modified": "2023-04-30T07:02:38.093Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ0ZDM4YTU2OWNiMjIwNGZmY2I1ZjU2In0sImlhdCI6MTY4MjgzNTIxMn0.eSWfoEtA7YhyVWOZGh6IRJ9hOA502XkMtY5qQa576H8"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "54e8a4b1-11cd-4c86-bfbf-58a7084977bd",
+    "colId": "0931da4d-9d56-4367-817d-5412f0a586b3",
+    "containerId": "b17529f2-575e-4c05-b488-ddf4ddec5258",
+    "name": "Add Note",
+    "url": "localhost:5000/api/notes/addnote",
+    "method": "POST",
+    "sortNum": 70000,
+    "created": "2023-04-30T07:20:15.757Z",
+    "modified": "2023-04-30T07:23:00.209Z",
+    "headers": [
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ0ZDM4YTU2OWNiMjIwNGZmY2I1ZjU2In0sImlhdCI6MTY4MjgzNTIxMn0.eSWfoEtA7YhyVWOZGh6IRJ9hOA502XkMtY5qQa576H8"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"My Title\",\n  \"description\": \"Please Wake up Early in the Morning\",\n  \"tag\": \"personal\"\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
