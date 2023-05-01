@@ -144,5 +144,28 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "6180fb73-99b0-49c3-82c0-8a3c0fae0271",
+    "colId": "0931da4d-9d56-4367-817d-5412f0a586b3",
+    "containerId": "b17529f2-575e-4c05-b488-ddf4ddec5258",
+    "name": "Delete Note",
+    "url": "localhost:5000/api/notes/deletenote/644e183cc9958718998fc100",
+    "method": "DELETE",
+    "sortNum": 90000,
+    "created": "2023-05-01T07:24:41.862Z",
+    "modified": "2023-05-01T07:36:36.012Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ0ZDM4YTU2OWNiMjIwNGZmY2I1ZjU2In0sImlhdCI6MTY4MjgzNTIxMn0.eSWfoEtA7YhyVWOZGh6IRJ9hOA502XkMtY5qQa576H8"
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]
