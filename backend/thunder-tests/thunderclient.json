@@ -28,11 +28,11 @@
     "colId": "0931da4d-9d56-4367-817d-5412f0a586b3",
     "containerId": "0933b7d4-687d-41b2-8fc2-1c30e63e1224",
     "name": "User Login using Credentials",
-    "url": "localhost:5000/api/auth/login",
+    "url": "http://localhost:5000/api/auth/login",
     "method": "POST",
     "sortNum": 30000,
     "created": "2023-04-29T15:53:20.450Z",
-    "modified": "2023-04-29T15:58:42.573Z",
+    "modified": "2023-05-15T08:29:07.110Z",
     "headers": [
       {
         "name": "Content-Type",
