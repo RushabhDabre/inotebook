@@ -25,7 +25,7 @@ function Signup(props) {
     else {
       props.showAlert("Invalid Details", "danger")
     }
- 
+
   }
 
   const onChange = (e) => {
@@ -33,28 +33,30 @@ function Signup(props) {
   }
 
   return (
-    <div className="container">
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">Full Name</label>
-          <input type="text" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp" />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email address</label>
-          <input type="email" className="form-control" id="email" name='email' onChange={onChange} aria-describedby="emailHelp" />
-          <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="password" className="form-label">Password</label>
-          <input type="password" className="form-control" id= "password" name='password' onChange={onChange} minLength={5} required />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="cpassword" className="form-label">Confirm Password</label>
-          <input type="password" className="form-control" id="cpassword" name='cpassword' onChange={onChange} minLength={5} required />
-        </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
-      </form>
-    </div>
+    <div className="card my-3 col-md-6 mx-auto">
+      <div className="card-body">
+      <h2 className='mt-3 mb-3'>Create an account to use iNotebook</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <label htmlFor="name" className="form-label">Full Name</label>
+            <input type="text" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp" />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">Email address</label>
+            <input type="email" className="form-control" id="email" name='email' onChange={onChange} aria-describedby="emailHelp" />
+            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label">Password</label>
+            <input type="password" className="form-control" id="password" name='password' onChange={onChange} minLength={5} required />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="cpassword" className="form-label">Confirm Password</label>
+            <input type="password" className="form-control" id="cpassword" name='cpassword' onChange={onChange} minLength={5} required />
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
   )
 }
