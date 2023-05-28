@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import noteContext from "../context/notes/noteContext"
 import NoteItem from './NoteItem';
 import AddNote from './AddNote';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const Notes = (props) => {
@@ -40,12 +40,8 @@ const Notes = (props) => {
 
     return (
         <>
+
             <AddNote showAlert={props.showAlert} />
-
-            <button ref={ref} type="button" className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-            </button>
-
 
             <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
@@ -79,8 +75,10 @@ const Notes = (props) => {
                 </div>
             </div>
 
+
             <div className="row my-3">
-                <h1>Your Notes</h1>
+            <h1>Your Notes</h1>
+                
                 <div className="conainer mx-2">
                     {notes.length === 0 && 'No notes to display'}
                 </div>
@@ -88,6 +86,7 @@ const Notes = (props) => {
                     return <NoteItem key={note._id} updateNote={updateNote} showAlert={props.showAlert} note={note} />;
                 })}
             </div>
+
         </>
     )
 }
