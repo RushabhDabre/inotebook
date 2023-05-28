@@ -33,9 +33,7 @@ function Signup(props) {
   }
 
   return (
-    <div className="card my-3 col-md-6 mx-auto">
-    <div className="card-body"> 
-      <h2 className='mt-3 mb-3'>Create an account to use iNotebook</h2>
+    <div className="container">
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Full Name</label>

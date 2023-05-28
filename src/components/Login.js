@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Login = (props) => {
+
     const [credentials, setCredentials] = useState({ email: "", password: "" });
     let navigate = useNavigate();
 
@@ -14,6 +15,7 @@ const Login = (props) => {
             },
             body: JSON.stringify({ email: credentials.email, password: credentials.password })
         });
+
         const json = await response.json();
         console.log(json);
         if (json.success) {
@@ -22,9 +24,11 @@ const Login = (props) => {
             navigate("/");
             props.showAlert("Logged in Successfully", "success")
         }
+
         else {
             props.showAlert("Invalid Credentials", "danger")
         }
+
 
     }
 
@@ -33,6 +37,7 @@ const Login = (props) => {
     }
 
     return (
+
         <div className="card my-3 col-md-5 mx-auto" >
             <div className="card-body">
                 <h2 className='mt-3 mb-3'>Login to continue to iNotebook</h2>
@@ -52,5 +57,5 @@ const Login = (props) => {
         </div>
     )
 }
-
 export default Login;
+
