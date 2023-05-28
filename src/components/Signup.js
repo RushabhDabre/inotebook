@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function Signup() {
+function Signup(props) {
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" });
   let navigate = useNavigate();
   const handleSubmit = async (e) => {
@@ -20,11 +20,12 @@ function Signup() {
       // Save the auth token and redirect
       localStorage.setItem('token', json.authtoken);
       navigate("/");
+      props.showAlert("Account Created Successfully", "success")
     }
     else {
-      alert("Invalid credentials");
+      props.showAlert("Invalid Details", "danger")
     }
-
+ 
   }
 
   const onChange = (e) => {
@@ -32,7 +33,8 @@ function Signup() {
   }
 
   return (
-    <div className="container">
+    <div className="container"> 
+      <h2 className='mt-3 mb-3'>Create an account to use iNotebook</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Full Name</label>
@@ -45,7 +47,7 @@ function Signup() {
         </div>
         <div className="mb-3">
           <label htmlFor="password" className="form-label">Password</label>
-          <input type="password" className="form-control" id="password" name='password' onChange={onChange} minLength={5} required />
+          <input type="password" className="form-control" id= "password" name='password' onChange={onChange} minLength={5} required />
         </div>
         <div className="mb-3">
           <label htmlFor="cpassword" className="form-label">Confirm Password</label>
