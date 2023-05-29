@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Alert(props){
+function Alert(props){ 
     const capitalize = (word) => {
         if (word === "danger") {
             word = "Error"

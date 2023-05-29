@@ -15,3 +15,7 @@ code {
 i{
   cursor: pointer;
 }
+
+.fa-2xl {
+  vertical-align: -1.1875em;
+}
